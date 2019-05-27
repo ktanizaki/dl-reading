@@ -77,7 +77,7 @@ CBOWモデルの学習で行うことは、上の式で表される損失関数�
 
 
 >P(w<sub>1</sub>, ..., w<sub>m</sub>) = P(w<sub>m</sub> | w<sub>1</sub>, ..., w<sub>m-1</sub>) P(w<sub>m-1</sub> | w<sub>1</sub>, ..., w<sub>m-2</sub>) ... P(w<sub>3</sub> | w<sub>1</sub>, w<sub>2</sub>) P(w<sub>2</sub> | w<sub>1</sub>) P(w<sub>1</sub>)
-<br/><img src="https://latex.codecogs.com/gif.latex?=\prod_{t=1}^{m} {P(w_t | w_1, ..., w_{t-1})}" /><span  style="float: right">(5.4)</span>
+<br/><img src="https://raw.githubusercontent.com/ktanizaki/dl-reading/master/5.4.gif" /><span  style="float: right">(5.4)</span>
 >>「w<sub>1</sub>とw<sub>2</sub>と・・・w<sub>m</sub>が同時に起こる確率」＝
 <br/>「w<sub>1</sub>が起こる確率」×
 <br/>「w<sub>1</sub>が起こった後にw<sub>2</sub>が起こる確率」×
@@ -96,7 +96,7 @@ CBOWモデルの学習で行うことは、上の式で表される損失関数�
 word2vecのCBOWモデルでコンテキストのサイズをある値に限定すれば、近似的に言語モデルに適用できる（無理やり）
 
 >P(w<sub>1</sub>, ..., w<sub>m</sub>)
-<br/><img src="https://latex.codecogs.com/gif.latex?=\prod_{t=1}^{m} {P(w_t | w_1, ..., w_{t-1})}\approx\prod_{t=1}^{m} {P(w_t | w_{t-2}, w_{t-1})}" /><span  style="float: right">(5.8)</span>
+<br/><img src="https://raw.githubusercontent.com/ktanizaki/dl-reading/master/5.8.gif" /><span  style="float: right">(5.8)</span>
 >>ここではコンテキストを左側2つの単語に限定している
 >>>このモデルは直前の2個の単語だけに依存して次の単語が決まるため、「2階マルコフ連鎖」と呼ぶことができる
 
